@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const links = [
   { href: "#home", label: "Inicio" },
-  { href: "#about", label: "Sobre" },
-  { href: "#contact", label: "Contato" },
+  { href: "/sobre", label: "Sobre" },
+  { href: "/servicos", label: "Servicos" },
+  { href: "/contacto", label: "Contato" },
 ];
 
 export default function Navbar() {
@@ -21,14 +22,14 @@ export default function Navbar() {
       `}
     >
      
-      <div className="flex items-center gap-2 overflow-hidden">
+      <div className="flex items-center gap-1 overflow-hidden">
         {menuOpen ? (
           links.map((link, index) => (
             <Link
               key={link.href}
               href={link.href}
               className={`
-                px-3 py-2 rounded-full hover:bg-gray-200 hover:font-bold hover:text-xl
+                px-1 py-2 rounded-full hover:bg-gray-200 hover:font-bold hover:text-xl
                 transition-all duration-500 transform font-semibold
                 ${menuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4 "}
               `}
