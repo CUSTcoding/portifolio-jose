@@ -1,7 +1,7 @@
 import Logo from "@/components/header/logo";
 import Navbar from "@/components/header/menu";
 import Hero from "@/components/heropage/heropage";
-import About from "@/components/about/about";
+// About component unused here; removed to avoid lint warning
 import Footer from "@/components/footer/footer";
 
 
@@ -11,7 +11,6 @@ export default function Home() {
       <Logo/>
       <Navbar/>
       <Hero/>
-      <About/>
       <Footer/>
     </main>
   );

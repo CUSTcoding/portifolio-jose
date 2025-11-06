@@ -2,10 +2,24 @@
 
 
   :root {
+    /* Existing defaults */
     --background: #121212;
     --foreground: #F9FAFB;
     --primary: #1E3A8A;    
-    --neutral: #374151;    
+    --neutral: #374151;
+
+    /* Leadership color palette */
+    --lead-azul-profundo: #1E3A8A; /* Azul Profundo - headers, títulos */
+    --lead-azul-profundo-rgb: 30, 58, 138;
+    --lead-dourado-amber: #FBBF24; /* Dourado/Âmbar - CTAs, ícones */
+    --lead-dourado-amber-rgb: 251, 191, 36;
+    --lead-cinza-carvao: #111827; /* Cinza Carvão - backgrounds, footer */
+
+    /* Semantic variables */
+    --lead-cta-bg: var(--lead-dourado-amber);
+    --lead-cta-color: #0b0b0b;
+    --lead-header-bg: var(--lead-azul-profundo);
+    --lead-section-bg: var(--lead-cinza-carvao);
 }
 
 body {
@@ -17,5 +31,29 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--primary);
+  color: var(--lead-azul-profundo);
+}
+
+/* Utility helpers for the leadership palette */
+.lead-cta {
+  background-color: var(--lead-cta-bg);
+  color: var(--lead-cta-color);
+}
+
+.lead-cta-outline {
+  border: 2px solid var(--lead-dourado-amber);
+  color: var(--lead-dourado-amber);
+}
+
+.lead-section {
+  background-color: var(--lead-section-bg);
+}
+
+.lead-header {
+  background-color: var(--lead-header-bg);
+  color: white;
+}
+
+.lead-link-accent:hover {
+  color: var(--lead-dourado-amber);
 }
