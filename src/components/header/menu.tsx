@@ -4,7 +4,7 @@ import { FiX, FiMenu } from "react-icons/fi";
 import Link from "next/link";
 
 const links = [
-  { href: "#home", label: "Inicio" },
+  { href: "/", label: "Inicio" },
   { href: "/sobre", label: "Sobre" },
   { href: "/servicos", label: "Servicos" },
   { href: "/contacto", label: "Contato" },
