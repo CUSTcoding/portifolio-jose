@@ -21,7 +21,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex flex-col justify-center bottom-0 w-screen md:w-[calc(80%)] items-center py-8 px-3 bg-gray-900 text-white gap-12">
+    <footer className="flex flex-col justify-center bottom-0 w-screen md:w-[calc(95%)] items-center py-8 px-3 bg-gray-900 text-white gap-12">
       <div className="flex flex-wrap items-center w-[calc(96%)] justify-center gap-6">
 
         {/* Nome e descrição */}
