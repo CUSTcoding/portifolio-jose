@@ -36,7 +36,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full min-h-[1000px] bg-black text-white flex flex-col items-center justify-center px-4 md:px-0 py-18">
+    <section className="w-full min-h-[1000px]  text-white flex flex-col items-center justify-center px-4 md:px-0 py-18">
 
       {/* Nome */}
       <motion.h1 
