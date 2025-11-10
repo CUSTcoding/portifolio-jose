@@ -90,17 +90,17 @@ export default function Hero() {
       >
       <div className="bg-gray-800 p-4 rounded-lg shadow-md w-[280px] flex items-start gap-2"
          style={{ backgroundColor: 'var(--lead-section-bg)' }}>
-       <FaBullseye className=" w-7 h-7 text-yellow-300" />
+       <FaBullseye className=" w-7 h-7 !text-gray-300" />
           <div>
-            <h3 className="font-semibold text-blue-300 mb-1">Missão</h3>
+            <h3 className="font-semibold !text-blue-300 mb-1">Missão</h3>
             <p className="text-gray-300 text-sm">Promover inclusão, empatia e transformação social.</p>
           </div>
         </div>
       <div className="bg-gray-800 p-4 rounded-lg shadow-md w-[280px] flex items-start gap-2"
          style={{ backgroundColor: 'var(--lead-section-bg)' }}>
-       <FaEye className="w-7 h-7 text-yellow-300"  />
+       <FaEye className="w-7 h-7 !text-gray-300"  />
           <div>
-            <h3 className="font-semibold text-blue-300 mb-1">Visão</h3>
+            <h3 className="font-semibold !text-blue-300 mb-1">Visão</h3>
             <p className="text-gray-300 text-sm">Contribuir para um Moçambique mais justo e equitativo.</p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function Hero() {
   {projects.map((project, index) => (
     <motion.div
       key={index}
-      className="w-[250px] bg-gray-100 h-80 rounded-2xl relative cursor-pointer"
+      className="w-[250px] bg-gray-900/50 h-80 rounded-2xl relative cursor-pointer"
     >
       <div className="relative w-full h-[150px] rounded-xl overflow-hidden ">
         <Image
@@ -123,8 +123,8 @@ export default function Hero() {
       </div>
 
       <div className="w-full flex  gap-1 flex-col justify-around">
-        <h3 className="font-bold mx-3">{project.title}</h3>
-        <h6 className="text-sm mx-3">{project.description}</h6>
+        <h3 className="font-bold mx-3 !text-white">{project.title}</h3>
+        <h6 className="text-sm mx-3 !text-white/50">{project.description}</h6>
       </div>
     </motion.div>
   ))}
